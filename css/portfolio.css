@@ -148,9 +148,6 @@ header{
 .icons img{
     width:40px;
 }
-#projects{
-    /* background-color: rgb( 118, 215, 196 ); */
-}
 .project-container{
     display: grid;
     grid-template-columns: auto auto;
@@ -161,7 +158,42 @@ header{
     padding:30px 0;
 }
 .project-item{
-    border:2px solid blue;
+    border:1px solid rgb( 130, 224, 170);
     border-radius: 10px;
-    padding:25px 25px;
+    padding:25px 18px;
+    transition: all ease-in 0.30s;
+}
+.project-item:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgb( 130, 224, 170);
+}
+#resume{
+    /* border:2px solid brown; */
+    margin: 25px 0;
+    padding:25px;
+    /* background: linear-gradient( to right,rgba(23,23,23,0.4), rgba(110,100,223,0.7)); */
+}
+/* .resume-container{
+    border:2px solid black;
+    margin:0 auto;
+    width:250px;
+    height: auto;
+} */
+#resume > a{
+    text-decoration: none;
+    color:var(--main-text-color);
+    margin:0 auto;
+    display: block;
+    width:15%;
+    padding:10px 19px;
+    background-color: rgb(69, 204, 209);
+
+    text-align: center;
+    transition: all ease-in-out 0.60s;
+}
+.download:hover{
+    background-color: rgb( 130, 224, 170);
+    color:rgb(0,0,0);
+    box-shadow: 0 0 50px rgb( 130, 224, 170);
+    border:none;
 }
