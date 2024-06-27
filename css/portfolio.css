@@ -9,8 +9,9 @@
     --main-text-color:rgb(0,0,0);
 }
 header{
-    height:60px;
-    background-color:rgb( 149, 165, 166  ) ;
+    height:90px;
+    background: linear-gradient( to right,rgba(238, 229, 229, 0.4), rgba(65, 60, 60, 0.7));
+    /* background-color:rgb( 149, 165, 166  ) ; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -75,6 +76,7 @@ header{
 #about{
     height: 100vh;
     width:100vw;
+    max-height: 100%;
     background-color: rgb( 149, 165, 166 );
     padding-top:30px;
 }
@@ -149,6 +151,7 @@ header{
     width:40px;
 }
 .project-container{
+    border:2px solid black;
     display: grid;
     grid-template-columns: auto auto;
     gap:3em;
@@ -198,28 +201,23 @@ header{
 }
 #contact{
     background-color: rgb(180, 95, 95);
-    padding:100px 200px;
+    padding:70px 200px;
 }
 .contact-container{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border:5px solid blue;
-}
-#contact > h2{
-    font-size: 30px;
-    /* margin-bottom: 5px; */
+    justify-content: space-evenly;
+    padding:20px 0;
+    /* border:5px solid blue; */
 }
 .contact-nav{
     display: flex;
     flex-direction: column;
-    gap:5px;
     list-style: none;
 }
 .contact-nav > li > a{
     text-decoration: none;
     color:black;
-    font-size:25px;
+    font-size:22px;
     transition: all ease-in-out 0.70s;
 }
 .contact-nav > li > a:hover{
@@ -229,4 +227,37 @@ header{
 .social-icons{
     display: flex;
     flex-direction: column;
+}
+.title{
+   font-size:35px;
+   transition: all ease-in 0.70s;
+}
+.title:hover{
+    color:var(--white-color);
+}
+.social-icons a{
+    color:var(--main-text-color);
+    text-decoration: none;
+    font-size:22px;
+    transition: all ease-in 0.70s;
+}
+.social-icons a:hover{
+    color:white;
+    padding-left:15px;
+}
+footer{
+    text-align: center;
+    font-size: 20px;
+    padding:25px 0;
+    background: linear-gradient(to right, rgba(222,11,10), rgba(12,23,79));
+}
+/** RESPONSIVE DESIGN**/
+@media(max-width:1358px){
+    .navbar li a{
+        font-size:20px
+    }
+    .project-item{
+        width:500px;
+    }
+    
 }
