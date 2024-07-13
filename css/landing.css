@@ -1,0 +1,277 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --main-text-color:black;
+}
+header{
+    background: linear-gradient(to right, rgb(  230, 176, 170), rgb( 217, 136, 128 ));
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 50px;
+}
+.navbar{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    /* background-color: red; */
+    width:520px;
+}
+.logo{
+    font-size: 31px;
+    font-style: italic;
+}
+.navbar li a{
+    text-decoration: none;
+    color:var(--main-text-color);
+    font-size: 23px;
+    transition: all ease-in-out 0.70s;
+    text-transform: uppercase;
+}
+.navbar li a::after{
+    content:'';
+    display: block;
+    height: 2px;
+    background:#ffffff;
+    width:0;
+    transition: inherit;
+}
+.navbar li a:hover{
+    color:rgb(255,255,255);
+}
+.navbar li a:hover::after{
+    width:100%;
+}
+.intouch{
+    border:none;
+    transition: all ease-in-out 0.70s;
+    padding:10px 20px;
+    border-radius: 5px;
+}
+.intouch:hover{
+    color:white;
+    background-color: rgb(0,0,0);
+    transform: scale(1.1);
+    /* border-radius:3px; */
+}
+#home{
+    background:linear-gradient(45deg,rgba(218, 175, 174, 0.24),rgba(8, 83, 156, 0.85)), url("../images/building-software-development-teams.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 82vh;
+    align-items: center;
+    justify-content:flex-start;
+    display: flex;
+    padding-left:500px;
+}
+.home-text{
+    text-align: left;
+}
+.home-text > h1{
+    font-size: 60px;
+    font-weight: 300;
+    /* text-transform: capitalize; */
+}
+.home-text > h1::first-letter{
+    font-size: 200%;
+    font-weight: 300;
+    letter-spacing: -0.2em;
+    color:aqua;
+}
+.home-text span{
+    color:aqua;
+}
+.dots{
+    height:10px;
+    width:10px;
+    background: aqua;
+    display: inline;
+}
+.home-text p{
+    font-size: 25px;
+    font-weight: 400;
+}
+.home-text > p >span{
+    color:var(--main-text-color);
+}
+.home-text > button{
+    margin-top:15px;
+    padding:15px;
+    font-size:18px;
+    border:3px solid white;
+    background-color: transparent;
+    transition: all ease-in-out 0.70s;
+}
+.home-text > button:hover{
+    background-color:aquamarine;
+    border:none;
+}
+#about{
+    /* border:2px solid red; */
+    padding-top:80px;
+}
+#about > h1{
+    text-align: center;
+    font-size:40px;
+    text-transform: capitalize;
+}
+#about > p{
+    text-align: center;
+    font-size: 17px;
+}
+.actions{
+    padding: 50px 80px;
+    /* border:2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    gap:1rem;
+}
+.action-item > h1{
+    text-align: left;
+}
+.action-item{
+    padding:15px;
+    /* height: 200px; */
+    text-align: left;
+    /* border:2px solid black; */
+    border-radius: 10px;
+    transition: all ease-in-out 0.70s;
+    background-color: rgb( 229, 232, 232);
+}
+#services{
+    background: rgb( 93, 109, 126 );
+    margin-top:50px;
+    /* border:2px solid black; */
+    padding:50px;
+}
+#services > h1{
+    text-align: center;
+    font-size:40px;
+    text-transform: capitalize;
+    margin-bottom:10px;
+}
+.services-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    /* gap: 3em; */
+}
+.service-item{
+    border:2px solid rgb( 247, 249, 249 );
+    border-radius: 10px;
+    padding:20px;
+    /* border:2px solid red; */
+    height:150px;
+    width:500px;
+}
+#contact{
+    margin-top:50px;
+}
+.section-title{
+    text-align: center;
+    font-size:40px;
+    text-transform: capitalize;
+    margin-bottom:5px;
+}
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:1300px;
+    max-width: 100%;
+    min-width: 200px;
+    padding:25px 50px;
+    border:2px solid black;
+    margin:0 auto;
+    border-radius: 10px;
+    /* background-color: rgb( 93, 109, 126 ); */
+}
+.mail-container > img{
+    width: 400px;
+    height: auto;
+    /* border-radius: 50%; */
+    /* border:2px solid black; */
+}
+form{
+    width:50%;
+    height: auto;    
+    /* border:2px solid black; */
+}
+form input, textarea{
+    display: block;
+    width:80%;
+    margin: 20px auto;
+}
+form input{
+    padding:10px 2.5px;
+}
+footer{
+    margin-top:50px;
+    height: 130px;
+    background: linear-gradient(to right, rgb(190,223,201), rgb(101,120,190));
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding:70px 25px; */
+}
+.details p{
+    font-size: 19px;
+}
+.rights{
+    display: flex;
+    justify-content: space-between;
+    width:350px;
+}
+.rights > p{
+    font-size: 19px;
+    transition: all ease-in-out 0.70s;
+
+}
+
+.social-icons{
+    display: flex;
+    justify-content: space-between;
+    width:220px;
+    padding:10px 25px;
+    flex-wrap: wrap;
+    /* border: 2px solid black; */
+}
+.social-icons i{
+    font-size: 19px;
+    border:2px solid rgb(183, 240, 227, 0.45);
+    background-color: transparent;
+    padding:10px;
+    border-radius: 5px;
+    transition: all ease-in-out 0.70s;
+    
+}
+.social-icons i:hover{
+    background-color: white;
+    border:none;
+}
+.rights > p:hover{
+    color: white;
+}
+@media(max-width:1304px){
+    .navbar li a{
+        font-size:18px;
+
+    }
+    .navbar{
+        gap:10px;
+        /* width:30px */
+
+    }
+    .intouch{
+        font-size: 16px;
+    }
+    .logo > h3{
+        font-size: 23px;
+    }
+}
